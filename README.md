@@ -1,8 +1,8 @@
-﻿#ArduinoRoboter
+﻿#ArduinoRoboter for under 80€
 
 This is the code for a easy to build and cheap arduino roboter.
 
-All components you can buy on amazon. Total costs: ~~ 60€
+All components you can buy on amazon. Total costs: ~~ 80€
 
 Arduino Uno ++ Arduino Motor Shield R3 Example Code ++ Arduino Roboter 2WD
 
