@@ -5,9 +5,8 @@ int searchHand()
 {
   int handPosition = 0;
 
-  digitalWrite(BREAK_B, HIGH);
-  digitalWrite(BRAKE_A, HIGH);
-  digitalWrite(BRAKE_B, HIGH);
+  digitalWrite(BRAKE_A, LOW);
+  digitalWrite(BRAKE_B, LOW);
 
   SensorServo.write(SERVO_RIGHT);
   do
