@@ -5,10 +5,11 @@ ArduinoRoboter
 Included Hardware
 + Arduino Uno 
 + 2 Motors
-+ 1 Ultrsensonis sensor
++ 1 ultrasonic sensor
 + 1 Servo Motor
 
-I will upload a picture for you early.
+Please take a look at ArduinoRoboter projects wiki
+https://github.com/superfliege/ArduinoRoboter/wiki
 
 Todo
 - [ ] First working robot drive
