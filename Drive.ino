@@ -11,6 +11,44 @@
 const int i_correction = 0;
 //todo try out robot and "try and error" correction value
 
+/**
+ * simple controlling the drive
+ * first looking area then control the drive
+ */
+void simpleDriveMode()
+{
+  
+  bool b_objectInFront = false;
+  bool b_objectLeft = false;
+  bool b_objectRight = false;
+  
+  //looking area
+  b_objectLeft = searchForObjects(0);
+  delay(100);
+  b_objectInFront = searchForObjects(50);
+  delay(100);
+  b_objectRight = searchForObjects(100); 
+  delay(100);
+
+  //drive
+  if(b_objectInFront == false)
+  {
+    driveForward(50);
+  }
+  else
+  {
+    turnRight();
+  }
+  
+  if(b_objectLeft == true)
+  {
+    driveRight(50,20);
+  } 
+  if(b_objectRight == true)
+  {
+    driveLeft(50,20);
+  }
+}
 
 /*
    i_speed is for controling speed in percentage (0-100)
