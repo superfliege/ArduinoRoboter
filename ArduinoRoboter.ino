@@ -1,5 +1,14 @@
 #include <Servo.h>
 
+/*
+   ArduinoRoboter.ino Main File
+   Defines a few values, setup and loop function
+   
+   @Author Fabrice
+
+*/
+
+
 #define BRAKE_A 9
 #define BRAKE_B 8
 #define DIR_A 12
