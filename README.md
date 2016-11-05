@@ -1,16 +1,14 @@
 ﻿#ArduinoRoboter
 
-ArduinoRoboter
+This is the code for a easy to build and cheap arduino roboter.
 
-Included Hardware
-+ Arduino Uno 
-+ 2 Motors
-+ 1 ultrasonic sensor
-+ 1 Servo Motor
+All components you can buy on amazon.
 
-Please take a look at ArduinoRoboter projects wiki
+Please take a look at ArduinoRoboter projects wiki:
 https://github.com/superfliege/ArduinoRoboter/wiki
 
-Todo
-- [ ] First working robot drive
-- [ ] Uploud documentation on github
+Project under construction.
+
+Please feel free to left some critic or feedback.
+
+Thanks.
