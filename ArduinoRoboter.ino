@@ -3,8 +3,11 @@
 /*
    ArduinoRoboter.ino Main File
    Defines a few values, setup and loop function
+   
    @Author Fabrice
+
 */
+
 
 #define BRAKE_A 9
 #define BRAKE_B 8
@@ -19,7 +22,7 @@
 #define SERVO_RIGHT 180
 
 #define TURN_SPEED 90
-#define SERVO_DELAY 15
+#define SERVO_DELAY 200
 
 #define RIGHT HIGH;
 #define LEFT LOW;
@@ -28,7 +31,6 @@
 #define SERVO_PIN 5
 
 Servo SensorServo;
-
 byte servoPosition = SERVO_MIDDLE;
 boolean servoRichtung = RIGHT;
 int sensorValue = 0; 
@@ -44,12 +46,15 @@ void setup()
   pinMode(DIR_B, OUTPUT); //Initiates Motor Channel B pin
   pinMode(BRAKE_B, OUTPUT);  //Initiates Brake Channel B pin
   SensorServo.attach(SERVO_PIN);
-  
 }
 
 //Just a simple test, other controls are not implementet yet.. sorry:(
 void loop()
 {
-  simpleDriveMode();
+  SensorServo.write(0);
+  delay(500);
+  SensorServo.write(150);
+  delay(500);
+  
 }
 
