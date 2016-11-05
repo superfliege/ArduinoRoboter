@@ -10,5 +10,6 @@ Included Hardware
 
 I will upload a picture for you early.
 
-
-- [x] First working robot drive
+Todo
+- [ ] First working robot drive
+- [ ] Uploud documentation on github
