@@ -3,9 +3,9 @@
 #define BREAK_B 8
 #define DIR_A 12
 #define DIR_B 13
-#define PWM_A 12
+#define PWM_A 3
 #define PWM_B 11
-#define FULL_SPEED 123
+#define FULL_SPEED 255
 #define TOO_CLOSE 500
 
 #define SERVO_LEFT 45
