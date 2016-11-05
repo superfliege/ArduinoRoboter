@@ -1,9 +1,13 @@
+//tested.. not working yet, but seems to be realy nice code
+#define HAND_DISTANCE 500
+
 int searchHand()
 {
   int handPosition = 0;
 
-  digitalWrite(BREAK_A, HIGH);
   digitalWrite(BREAK_B, HIGH);
+  digitalWrite(BRAKE_A, HIGH);
+  digitalWrite(BRAKE_B, HIGH);
 
   SensorServo.write(SERVO_RIGHT);
   do
@@ -34,9 +38,7 @@ int searchHand()
       
       
     }
-    }(while(sensorValue < HAND_DISTANCE);
-  }
-
-  
+    }
+  }while(sensorValue < HAND_DISTANCE);
 }
 

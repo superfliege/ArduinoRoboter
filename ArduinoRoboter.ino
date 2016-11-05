@@ -1,12 +1,12 @@
 #include <Servo.h>
+
 #define BRAKE_A 9
-#define BREAK_B 8
+#define BRAKE_B 8
 #define DIR_A 12
 #define DIR_B 13
 #define PWM_A 3
 #define PWM_B 11
 #define FULL_SPEED 255
-#define TOO_CLOSE 500
 
 #define SERVO_LEFT 45
 #define SERVO_MIDDLE 95
@@ -25,19 +25,22 @@ byte servoPosition = SERVO_MIDDLE;
 boolean servoRichtung = RIGHT;
 int sensorValue = 0; 
 
-void setup() {
+void setup() 
+{
   
   //Setup Channel A
-  pinMode(12, OUTPUT); //Initiates Motor Channel A pin
-  pinMode(9, OUTPUT); //Initiates Brake Channel A pin
+  pinMode(DIR_A, OUTPUT); //Initiates Motor Channel A pin
+  pinMode(BRAKE_A, OUTPUT); //Initiates Brake Channel A pin
 
   //Setup Channel B
-  pinMode(13, OUTPUT); //Initiates Motor Channel A pin
-  pinMode(8, OUTPUT);  //Initiates Brake Channel A pin
+  pinMode(DIR_B, OUTPUT); //Initiates Motor Channel B pin
+  pinMode(BRAKE_B, OUTPUT);  //Initiates Brake Channel B pin
   
 }
 
-void loop(){
+//Just a simple test, other controls are not implementet yet.. sorry:(
+void loop()
+{
 
   
   //Motor A forward @ full speed
